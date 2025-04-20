@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品展示 - EVER SOURCE INTERNATIONAL LIMITED</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>EVER SOURCE</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" data-lang="home">首页</a></li>
+                    <li><a href="about.html" data-lang="about">关于我们</a></li>
+                    <li><a href="products.html" data-lang="products">产品展示</a></li>
+                    <li><a href="contact.html" data-lang="contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="language-select">
+                    <option value="zh-CN">简体中文</option>
+                    <option value="zh-TW">繁體中文</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products-header">
+            <div class="container">
+                <h1 data-lang="products-title">产品展示</h1>
+                <p data-lang="products-subtitle">精选优质家居用品，满足您的各种需求</p>
+            </div>
+        </section>
+
+        <section class="products-categories">
+            <div class="container">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all" data-lang="all">全部</button>
+                    <button class="filter-btn" data-category="kitchen" data-lang="kitchen">厨房用品</button>
+                    <button class="filter-btn" data-category="bathroom" data-lang="bathroom">卫浴用品</button>
+                    <button class="filter-btn" data-category="decor" data-lang="decor">家居装饰</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-grid-section">
+            <div class="container">
+                <div class="products-grid">
+                    <div class="product-card" data-category="kitchen">
+                        <img src="images/products/kitchen-1.jpg" alt="厨房用品">
+                        <div class="product-info">
+                            <h3 data-lang="product1">不锈钢厨具套装</h3>
+                            <p data-lang="product1-desc">高品质不锈钢材质，耐用实用</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="kitchen">
+                        <img src="images/products/kitchen-2.jpg" alt="厨房用品">
+                        <div class="product-info">
+                            <h3 data-lang="product4">陶瓷餐具套装</h3>
+                            <p data-lang="product4-desc">精美陶瓷，安全环保</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="bathroom">
+                        <img src="images/products/bathroom-1.jpg" alt="卫浴用品">
+                        <div class="product-info">
+                            <h3 data-lang="product2">浴室收纳套装</h3>
+                            <p data-lang="product2-desc">防水防潮，实用美观</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="bathroom">
+                        <img src="images/products/bathroom-2.jpg" alt="卫浴用品">
+                        <div class="product-info">
+                            <h3 data-lang="product5">浴室清洁套装</h3>
+                            <p data-lang="product5-desc">专业清洁，方便实用</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="decor">
+                        <img src="images/products/decor-1.jpg" alt="家居装饰">
+                        <div class="product-info">
+                            <h3 data-lang="product3">现代风格装饰品</h3>
+                            <p data-lang="product3-desc">简约时尚，提升家居品味</p>
+                        </div>
+                    </div>
+                    <div class="product-card" data-category="decor">
+                        <img src="images/products/decor-2.jpg" alt="家居装饰">
+                        <div class="product-info">
+                            <h3 data-lang="product6">创意摆件</h3>
+                            <p data-lang="product6-desc">独特设计，彰显个性</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-cta">
+            <div class="container">
+                <h2 data-lang="more-products">更多产品</h2>
+                <p data-lang="contact-for-more">请联系我们获取完整产品目录</p>
+                <a href="contact.html" class="cta-button" data-lang="contact-us">联系我们</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <h3>EVER SOURCE INTERNATIONAL LIMITED</h3>
+                <p data-lang="address">地址：FLAT/RM 122 1/F LIVEN HOUSE 61-63 KING YIP STREET KWUN TONG</p>
+                <p data-lang="tel">电话：852 6209 7685</p>
+                <p data-lang="email">邮箱：eversource739@gmail.com</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html" data-lang="home">首页</a>
+                <a href="about.html" data-lang="about">关于我们</a>
+                <a href="products.html" data-lang="products">产品展示</a>
+                <a href="contact.html" data-lang="contact">联系我们</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/language.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html> 
