@@ -3,105 +3,458 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于我们 - EVER SOURCE INTERNATIONAL LIMITED</title>
+    <title data-lang="zh-CN">关于我们 - WORLD JUMBO LIMITED</title>
+    <title data-lang="zh-HK" style="display: none;">關於我們 - WORLD JUMBO LIMITED</title>
+    <title data-lang="en" style="display: none;">About Us - WORLD JUMBO LIMITED</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- 导航栏 -->
     <header>
         <div class="container">
             <div class="logo">
-                <h1>EVER SOURCE</h1>
+                <h1>WORLD JUMBO LIMITED</h1>
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" data-lang="home">首页</a></li>
-                    <li><a href="about.html" data-lang="about">关于我们</a></li>
-                    <li><a href="products.html" data-lang="products">产品展示</a></li>
-                    <li><a href="contact.html" data-lang="contact">联系我们</a></li>
+                    <li><a href="index.html" data-lang="zh-CN">首页</a></li>
+                    <li><a href="index.html" data-lang="zh-HK" style="display: none;">首頁</a></li>
+                    <li><a href="index.html" data-lang="en" style="display: none;">Home</a></li>
+                    <li><a href="about.html" class="active" data-lang="zh-CN">关于我们</a></li>
+                    <li><a href="about.html" class="active" data-lang="zh-HK" style="display: none;">關於我們</a></li>
+                    <li><a href="about.html" class="active" data-lang="en" style="display: none;">About Us</a></li>
+                    <li><a href="services.html" data-lang="zh-CN">产品服务</a></li>
+                    <li><a href="services.html" data-lang="zh-HK" style="display: none;">產品服務</a></li>
+                    <li><a href="services.html" data-lang="en" style="display: none;">Products & Services</a></li>
+                    <li><a href="contact.html" data-lang="zh-CN">联系我们</a></li>
+                    <li><a href="contact.html" data-lang="zh-HK" style="display: none;">聯絡我們</a></li>
+                    <li><a href="contact.html" data-lang="en" style="display: none;">Contact Us</a></li>
                 </ul>
             </nav>
-            <div class="language-selector">
-                <select id="language-select">
+            <div class="language-switcher">
+                <select id="languageSelect" class="lang-select">
+				  <option value="zh-HK">繁體中文</option>
                     <option value="zh-CN">简体中文</option>
-                    <option value="zh-TW">繁體中文</option>
+                 
                     <option value="en">English</option>
                 </select>
+            </div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
 
-    <main>
-        <section class="about-header">
-            <div class="container">
-                <h1 data-lang="about-title">关于我们</h1>
-                <p data-lang="about-subtitle">专业家居用品供应商，为您提供优质产品</p>
+    <!-- 页面标题 -->
+    <section class="page-header">
+        <div class="container">
+            <h1 data-lang="zh-CN">关于我们</h1>
+            <h1 data-lang="zh-HK" style="display: none;">關於我們</h1>
+            <h1 data-lang="en" style="display: none;">About Us</h1>
+            <div class="breadcrumb">
+                <a href="index.html" data-lang="zh-CN">首页</a>
+                <a href="index.html" data-lang="zh-HK" style="display: none;">首頁</a>
+                <a href="index.html" data-lang="en" style="display: none;">Home</a>
+                <span data-lang="zh-CN"> / 关于我们</span>
+                <span data-lang="zh-HK" style="display: none;"> / 關於我們</span>
+                <span data-lang="en" style="display: none;"> / About Us</span>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="about-content">
-            <div class="container">
+    <!-- 公司简介 -->
+    <section class="about-us">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/about/photo-1486406146926-c627a92ad1ab.avif" alt="公司大楼">
+                </div>
                 <div class="about-text">
-                    <p data-lang="about-desc">我们是一家专注于家居用品跨境B2B批发贸易的企业，致力于为海外零售商、分销商及连锁超市提供高性价比的一站式采购解决方案。通过深度整合中国优质制造资源与全球市场需求，我们搭建起高效稳定的跨国供应链体系。</p>
-                    
-                    <h3 data-lang="mission">我们的使命</h3>
-                    <p data-lang="mission-desc">为全球客户提供优质、创新、环保的家居用品，推动中国制造走向世界。</p>
-
-                    <h3 data-lang="vision">我们的愿景</h3>
-                    <p data-lang="vision-desc">成为全球领先的家居用品B2B贸易平台，打造值得信赖的国际品牌。</p>
-
-                    <h3 data-lang="values">核心价值观</h3>
-                    <ul class="values-list">
-                        <li data-lang="value1">诚信经营，客户至上</li>
-                        <li data-lang="value2">品质第一，创新驱动</li>
-                        <li data-lang="value3">合作共赢，持续发展</li>
-                        <li data-lang="value4">环保责任，绿色未来</li>
-                    </ul>
+                    <h2 data-lang="zh-CN">公司介绍</h2>
+                    <h2 data-lang="zh-HK" style="display: none;">公司介紹</h2>
+                    <h2 data-lang="en" style="display: none;">Company Introduction</h2>
+                    <div class="divider"></div>
+                    <p data-lang="zh-CN">WORLD JUMBO LIMITED成立于多年前，是一家专业从事企业贴标宣传品及定制推广礼品的综合性企业。我们致力于为韩国、香港、新加坡、日本、马来西亚等各个国家的企业客户提供高品质、个性化的宣传推广产品定制及批发服务。</p>
+                    <p data-lang="zh-HK" style="display: none;">WORLD JUMBO LIMITED成立於多年前，是一家專業從事企業貼標宣傳品及定制推廣禮品的綜合性企業。我們致力於為韓國、香港、新加坡、日本、馬來西亞等各個國家的企業客戶提供高品質、個性化的宣傳推廣產品定制及批發服務。</p>
+                    <p data-lang="en" style="display: none;">WORLD JUMBO LIMITED was established many years ago as a comprehensive enterprise specializing in corporate labeled promotional products and customized promotional gifts. We are committed to providing high-quality, personalized promotional product customization and wholesale services to corporate clients from various countries including Korea, Hong Kong, Singapore, Japan, and Malaysia.</p>
+                    <p data-lang="zh-CN">公司拥有丰富的产品种类、可靠的采购渠道、高效的物流配送，以及精准贴心的定制服务，能够满足不同企业客户的多样化需求，让您的品牌在市场竞争中脱颖而出。</p>
+                    <p data-lang="zh-HK" style="display: none;">公司擁有豐富的產品種類、可靠的採購渠道、高效的物流配送，以及精準貼心的定制服務，能夠滿足不同企業客戶的多樣化需求，讓您的品牌在市場競爭中脫穎而出。</p>
+                    <p data-lang="en" style="display: none;">With our diverse product range, reliable procurement channels, efficient logistics distribution, and precise customized services, we can meet the diverse needs of different corporate clients, helping your brand stand out in the market competition.</p>
+                    <p data-lang="zh-CN">多年来，我们一直秉承"品质至上、客户为先"的服务理念，努力为客户提供最优质的产品和最专业的服务，赢得了众多国际企业客户的认可和信赖。</p>
+                    <p data-lang="zh-HK" style="display: none;">多年來，我們一直秉承"品質至上、客戶為先"的服務理念，努力為客戶提供最優質的產品和最專業的服務，贏得了眾多國際企業客戶的認可和信賴。</p>
+                    <p data-lang="en" style="display: none;">For many years, we have adhered to the service philosophy of "quality first, customer first", striving to provide our clients with the highest quality products and most professional services, earning the recognition and trust of numerous international corporate clients.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="team">
-            <div class="container">
-                <h2 data-lang="team-title">专业团队</h2>
-                <div class="team-grid">
-                    <div class="team-member">
-                        <i class="fas fa-users"></i>
-                        <h3 data-lang="team1">采购团队</h3>
-                        <p data-lang="team1-desc">专业的采购团队，确保产品质量和价格优势</p>
+    <!-- 我们的使命与愿景 -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mv-content">
+                <div class="mission">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
                     </div>
-                    <div class="team-member">
-                        <i class="fas fa-globe"></i>
-                        <h3 data-lang="team2">国际业务</h3>
-                        <p data-lang="team2-desc">经验丰富的国际业务团队，提供专业服务</p>
+                    <h2 data-lang="zh-CN">我们的使命</h2>
+                    <h2 data-lang="zh-HK" style="display: none;">我們的使命</h2>
+                    <h2 data-lang="en" style="display: none;">Our Mission</h2>
+                    <p data-lang="zh-CN">为全球企业提供高品质的宣传品定制服务，帮助客户提升品牌价值与市场影响力。</p>
+                    <p data-lang="zh-HK" style="display: none;">為全球企業提供高品質的宣傳品定制服務，幫助客戶提升品牌價值與市場影響力。</p>
+                    <p data-lang="en" style="display: none;">To provide high-quality promotional product customization services to global enterprises, helping clients enhance brand value and market influence.</p>
+                </div>
+                <div class="vision">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
                     </div>
-                    <div class="team-member">
+                    <h2 data-lang="zh-CN">我们的愿景</h2>
+                    <h2 data-lang="zh-HK" style="display: none;">我們的願景</h2>
+                    <h2 data-lang="en" style="display: none;">Our Vision</h2>
+                    <p data-lang="zh-CN">成为全球领先的企业宣传品定制服务提供商，引领行业创新与发展。</p>
+                    <p data-lang="zh-HK" style="display: none;">成為全球領先的企業宣傳品定制服務提供商，引領行業創新與發展。</p>
+                    <p data-lang="en" style="display: none;">To become the world's leading corporate promotional product customization service provider, leading industry innovation and development.</p>
+                </div>
+                <div class="values">
+                    <div class="mv-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h2 data-lang="zh-CN">我们的价值观</h2>
+                    <h2 data-lang="zh-HK" style="display: none;">我們的價值觀</h2>
+                    <h2 data-lang="en" style="display: none;">Our Values</h2>
+                    <p data-lang="zh-CN">诚信经营、品质至上、客户为先、持续创新。</p>
+                    <p data-lang="zh-HK" style="display: none;">誠信經營、品質至上、客戶為先、持續創新。</p>
+                    <p data-lang="en" style="display: none;">Integrity in business, quality first, customer first, continuous innovation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 我们的优势 -->
+    <section class="our-advantages">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang="zh-CN">我们的优势</h2>
+                <h2 data-lang="zh-HK" style="display: none;">我們的優勢</h2>
+                <h2 data-lang="en" style="display: none;">Our Advantages</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-globe-asia"></i>
+                    </div>
+                    <h3 data-lang="zh-CN">国际化服务网络</h3>
+                    <h3 data-lang="zh-HK" style="display: none;">國際化服務網絡</h3>
+                    <h3 data-lang="en" style="display: none;">International Service Network</h3>
+                    <p data-lang="zh-CN">我们拥有覆盖亚洲多个国家的服务网络，能够为不同国家、不同文化背景的企业客户提供本地化的定制服务。</p>
+                    <p data-lang="zh-HK" style="display: none;">我們擁有覆蓋亞洲多個國家的服務網絡，能夠為不同國家、不同文化背景的企業客戶提供本地化的定制服務。</p>
+                    <p data-lang="en" style="display: none;">We have a service network covering multiple countries in Asia, providing localized customization services for corporate clients from different countries and cultural backgrounds.</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3 data-lang="zh-CN">丰富的产品种类</h3>
+                    <h3 data-lang="zh-HK" style="display: none;">豐富的產品種類</h3>
+                    <h3 data-lang="en" style="display: none;">Diverse Product Range</h3>
+                    <p data-lang="zh-CN">从办公用品到促销礼品，从企业文化产品到展会宣传品，我们提供数千种产品选择，满足各类企业宣传需求。</p>
+                    <p data-lang="zh-HK" style="display: none;">從辦公用品到促銷禮品，從企業文化產品到展會宣傳品，我們提供數千種產品選擇，滿足各類企業宣傳需求。</p>
+                    <p data-lang="en" style="display: none;">From office supplies to promotional gifts, from corporate culture products to exhibition promotional items, we offer thousands of product options to meet various corporate promotional needs.</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 data-lang="zh-CN">严格的品质控制</h3>
+                    <h3 data-lang="zh-HK" style="display: none;">嚴格的品質控制</h3>
+                    <h3 data-lang="en" style="display: none;">Strict Quality Control</h3>
+                    <p data-lang="zh-CN">我们建立了完善的质量管理体系，从原材料采购到成品出厂，每一个环节都严格把关，确保产品品质。</p>
+                    <p data-lang="zh-HK" style="display: none;">我們建立了完善的質量管理體系，從原材料採購到成品出廠，每一個環節都嚴格把關，確保產品品質。</p>
+                    <p data-lang="en" style="display: none;">We have established a comprehensive quality management system, strictly controlling every step from raw material procurement to finished product delivery to ensure product quality.</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 data-lang="zh-CN">创意设计能力</h3>
+                    <h3 data-lang="zh-HK" style="display: none;">創意設計能力</h3>
+                    <h3 data-lang="en" style="display: none;">Creative Design Capability</h3>
+                    <p data-lang="zh-CN">我们拥有专业的设计团队，能够根据客户需求提供创意设计方案，让您的宣传品独具特色。</p>
+                    <p data-lang="zh-HK" style="display: none;">我們擁有專業的設計團隊，能夠根據客戶需求提供創意設計方案，讓您的宣傳品獨具特色。</p>
+                    <p data-lang="en" style="display: none;">We have a professional design team that can provide creative design solutions based on client needs, making your promotional items unique.</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
                         <i class="fas fa-truck"></i>
-                        <h3 data-lang="team3">物流团队</h3>
-                        <p data-lang="team3-desc">高效的物流团队，确保准时交付</p>
+                    </div>
+                    <h3 data-lang="zh-CN">高效物流配送</h3>
+                    <h3 data-lang="zh-HK" style="display: none;">高效物流配送</h3>
+                    <h3 data-lang="en" style="display: none;">Efficient Logistics Distribution</h3>
+                    <p data-lang="zh-CN">我们与多家国际物流公司建立了长期合作关系，能够为客户提供快速、安全、可靠的物流配送服务。</p>
+                    <p data-lang="zh-HK" style="display: none;">我們與多家國際物流公司建立了長期合作關係，能夠為客戶提供快速、安全、可靠的物流配送服務。</p>
+                    <p data-lang="en" style="display: none;">We have established long-term partnerships with multiple international logistics companies, providing clients with fast, safe, and reliable logistics distribution services.</p>
+                </div>
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 data-lang="zh-CN">专业客户服务</h3>
+                    <h3 data-lang="zh-HK" style="display: none;">專業客戶服務</h3>
+                    <h3 data-lang="en" style="display: none;">Professional Customer Service</h3>
+                    <p data-lang="zh-CN">我们的客户服务团队经验丰富，能够为客户提供专业、贴心的一对一服务，解决客户在定制过程中遇到的各种问题。</p>
+                    <p data-lang="zh-HK" style="display: none;">我們的客戶服務團隊經驗豐富，能夠為客戶提供專業、貼心的一對一服務，解決客戶在定制過程中遇到的各種問題。</p>
+                    <p data-lang="en" style="display: none;">Our customer service team is experienced and can provide professional, attentive one-on-one service to solve various problems clients encounter during the customization process.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 我们的团队 -->
+    <section class="our-team">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang="zh-CN">我们的团队</h2>
+                <h2 data-lang="zh-HK" style="display: none;">我們的團隊</h2>
+                <h2 data-lang="en" style="display: none;">Our Team</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/about/photo-1573496359142-b8d87734a5a2.avif" alt="创意设计总监">
+                    </div>
+                    <div class="member-info">
+                        <h3 data-lang="zh-CN">张总监</h3>
+                        <h3 data-lang="zh-HK" style="display: none;">張總監</h3>
+                        <h3 data-lang="en" style="display: none;">Director Zhang</h3>
+                        <p class="member-position" data-lang="zh-CN">创意设计总监</p>
+                        <p class="member-position" data-lang="zh-HK" style="display: none;">創意設計總監</p>
+                        <p class="member-position" data-lang="en" style="display: none;">Creative Design Director</p>
+                        <p class="member-desc" data-lang="zh-CN">拥有10年以上的企业宣传品设计经验，曾服务于多家国际知名企业。</p>
+                        <p class="member-desc" data-lang="zh-HK" style="display: none;">擁有10年以上的企業宣傳品設計經驗，曾服務於多家國際知名企業。</p>
+                        <p class="member-desc" data-lang="en" style="display: none;">With over 10 years of experience in corporate promotional product design, having served multiple internationally renowned companies.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/about/photo-1560250097-0b93528c311a.avif" alt="国际业务经理">
+                    </div>
+                    <div class="member-info">
+                        <h3 data-lang="zh-CN">李经理</h3>
+                        <h3 data-lang="zh-HK" style="display: none;">李經理</h3>
+                        <h3 data-lang="en" style="display: none;">Manager Li</h3>
+                        <p class="member-position" data-lang="zh-CN">国际业务经理</p>
+                        <p class="member-position" data-lang="zh-HK" style="display: none;">國際業務經理</p>
+                        <p class="member-position" data-lang="en" style="display: none;">International Business Manager</p>
+                        <p class="member-desc" data-lang="zh-CN">精通多国语言，负责亚洲各国市场的业务拓展与客户关系维护。</p>
+                        <p class="member-desc" data-lang="zh-HK" style="display: none;">精通多國語言，負責亞洲各國市場的業務拓展與客戶關係維護。</p>
+                        <p class="member-desc" data-lang="en" style="display: none;">Proficient in multiple languages, responsible for business development and client relationship maintenance in Asian markets.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/about/photo-1472099645785-5658abf4ff4e.avif" alt="生产质量主管">
+                    </div>
+                    <div class="member-info">
+                        <h3 data-lang="zh-CN">王主管</h3>
+                        <h3 data-lang="zh-HK" style="display: none;">王主管</h3>
+                        <h3 data-lang="en" style="display: none;">Supervisor Wang</h3>
+                        <p class="member-position" data-lang="zh-CN">生产质量主管</p>
+                        <p class="member-position" data-lang="zh-HK" style="display: none;">生產質量主管</p>
+                        <p class="member-position" data-lang="en" style="display: none;">Production Quality Supervisor</p>
+                        <p class="member-desc" data-lang="zh-CN">负责产品质量控制与生产流程优化，确保每件产品符合国际质量标准。</p>
+                        <p class="member-desc" data-lang="zh-HK" style="display: none;">負責產品質量控制與生產流程優化，確保每件產品符合國際質量標準。</p>
+                        <p class="member-desc" data-lang="en" style="display: none;">Responsible for product quality control and production process optimization, ensuring each product meets international quality standards.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-photo">
+                        <img src="images/about/photo-1580489944761-15a19d654956.avif" alt="客户服务经理">
+                    </div>
+                    <div class="member-info">
+                        <h3 data-lang="zh-CN">陈经理</h3>
+                        <h3 data-lang="zh-HK" style="display: none;">陳經理</h3>
+                        <h3 data-lang="en" style="display: none;">Manager Chen</h3>
+                        <p class="member-position" data-lang="zh-CN">客户服务经理</p>
+                        <p class="member-position" data-lang="zh-HK" style="display: none;">客戶服務經理</p>
+                        <p class="member-position" data-lang="en" style="display: none;">Customer Service Manager</p>
+                        <p class="member-desc" data-lang="zh-CN">拥有丰富的客户服务经验，致力于为客户提供最佳的服务体验。</p>
+                        <p class="member-desc" data-lang="zh-HK" style="display: none;">擁有豐富的客戶服務經驗，致力於為客戶提供最佳的服務體驗。</p>
+                        <p class="member-desc" data-lang="en" style="display: none;">With extensive customer service experience, committed to providing clients with the best service experience.</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
+    <!-- 我们的历程 -->
+    <section class="our-history">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang="zh-CN">发展历程</h2>
+                <h2 data-lang="zh-HK" style="display: none;">發展歷程</h2>
+                <h2 data-lang="en" style="display: none;">Development History</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang="zh-CN">公司成立</h3>
+                        <h3 data-lang="zh-HK" style="display: none;">公司成立</h3>
+                        <h3 data-lang="en" style="display: none;">Company Establishment</h3>
+                        <p class="timeline-date" data-lang="zh-CN">初创阶段</p>
+                        <p class="timeline-date" data-lang="zh-HK" style="display: none;">初創階段</p>
+                        <p class="timeline-date" data-lang="en" style="display: none;">Startup Phase</p>
+                        <p data-lang="zh-CN">WORLD JUMBO LIMITED成立，开始为香港本地企业提供宣传品定制服务。</p>
+                        <p data-lang="zh-HK" style="display: none;">WORLD JUMBO LIMITED成立，開始為香港本地企業提供宣傳品定制服務。</p>
+                        <p data-lang="en" style="display: none;">WORLD JUMBO LIMITED was established, beginning to provide promotional product customization services to local Hong Kong enterprises.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang="zh-CN">业务扩展</h3>
+                        <h3 data-lang="zh-HK" style="display: none;">業務擴展</h3>
+                        <h3 data-lang="en" style="display: none;">Business Expansion</h3>
+                        <p class="timeline-date" data-lang="zh-CN">成长阶段</p>
+                        <p class="timeline-date" data-lang="zh-HK" style="display: none;">成長階段</p>
+                        <p class="timeline-date" data-lang="en" style="display: none;">Growth Phase</p>
+                        <p data-lang="zh-CN">公司业务扩展至新加坡市场，产品种类增加到上千种，开始为知名企业提供定制服务。</p>
+                        <p data-lang="zh-HK" style="display: none;">公司業務擴展至新加坡市場，產品種類增加到上千種，開始為知名企業提供定制服務。</p>
+                        <p data-lang="en" style="display: none;">The company expanded its business to the Singapore market, increased product variety to thousands, and began providing customization services to well-known enterprises.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang="zh-CN">拓展亚洲市场</h3>
+                        <h3 data-lang="zh-HK" style="display: none;">拓展亞洲市場</h3>
+                        <h3 data-lang="en" style="display: none;">Expanding Asian Market</h3>
+                        <p class="timeline-date" data-lang="zh-CN">扩展阶段</p>
+                        <p class="timeline-date" data-lang="zh-HK" style="display: none;">擴展階段</p>
+                        <p class="timeline-date" data-lang="en" style="display: none;">Expansion Phase</p>
+                        <p data-lang="zh-CN">公司业务覆盖韩国、日本、马来西亚等亚洲多个国家，建立国际化服务网络。</p>
+                        <p data-lang="zh-HK" style="display: none;">公司業務覆蓋韓國、日本、馬來西亞等亞洲多個國家，建立國際化服務網絡。</p>
+                        <p data-lang="en" style="display: none;">The company's business covered multiple Asian countries including Korea, Japan, and Malaysia, establishing an international service network.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3 data-lang="zh-CN">现在</h3>
+                        <h3 data-lang="zh-HK" style="display: none;">現在</h3>
+                        <h3 data-lang="en" style="display: none;">Present</h3>
+                        <p class="timeline-date" data-lang="zh-CN">发展阶段</p>
+                        <p class="timeline-date" data-lang="zh-HK" style="display: none;">發展階段</p>
+                        <p class="timeline-date" data-lang="en" style="display: none;">Development Phase</p>
+                        <p data-lang="zh-CN">公司继续成长壮大，致力于为全球客户提供更优质的服务，迈向国际化综合企业。</p>
+                        <p data-lang="zh-HK" style="display: none;">公司繼續成長壯大，致力於為全球客戶提供更優質的服務，邁向國際化綜合企業。</p>
+                        <p data-lang="en" style="display: none;">The company continues to grow and expand, committed to providing better services to global clients, moving towards becoming an international comprehensive enterprise.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 合作伙伴 -->
+    <section class="our-partners">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-lang="zh-CN">合作伙伴</h2>
+                <h2 data-lang="zh-HK" style="display: none;">合作夥伴</h2>
+                <h2 data-lang="en" style="display: none;">Partners</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-item">
+                    <div class="image-placeholder">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
     <footer>
         <div class="container">
-            <div class="footer-info">
-                <h3>EVER SOURCE INTERNATIONAL LIMITED</h3>
-                <p data-lang="address">地址：FLAT/RM 122 1/F LIVEN HOUSE 61-63 KING YIP STREET KWUN TONG</p>
-                <p data-lang="tel">电话：852 6209 7685</p>
-                <p data-lang="email">邮箱：eversource739@gmail.com</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>WORLD JUMBO LIMITED</h2>
+                    <p data-lang="zh-CN">专业宣传品定制服务提供商</p>
+                    <p data-lang="zh-HK" style="display: none;">專業宣傳品定制服務提供商</p>
+                    <p data-lang="en" style="display: none;">Professional Promotional Products Customization Service Provider</p>
+                </div>
+                <div class="footer-links">
+                    <h3 data-lang="zh-CN">快速链接</h3>
+                    <h3 data-lang="zh-HK" style="display: none;">快速連結</h3>
+                    <h3 data-lang="en" style="display: none;">Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html" data-lang="zh-CN">首页</a></li>
+                        <li><a href="index.html" data-lang="zh-HK" style="display: none;">首頁</a></li>
+                        <li><a href="index.html" data-lang="en" style="display: none;">Home</a></li>
+                        <li><a href="about.html" data-lang="zh-CN">关于我们</a></li>
+                        <li><a href="about.html" data-lang="zh-HK" style="display: none;">關於我們</a></li>
+                        <li><a href="about.html" data-lang="en" style="display: none;">About Us</a></li>
+                        <li><a href="services.html" data-lang="zh-CN">产品服务</a></li>
+                        <li><a href="services.html" data-lang="zh-HK" style="display: none;">產品服務</a></li>
+                        <li><a href="services.html" data-lang="en" style="display: none;">Products & Services</a></li>
+                        <li><a href="contact.html" data-lang="zh-CN">联系我们</a></li>
+                        <li><a href="contact.html" data-lang="zh-HK" style="display: none;">聯絡我們</a></li>
+                        <li><a href="contact.html" data-lang="en" style="display: none;">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3 data-lang="zh-CN">联系方式</h3>
+                    <h3 data-lang="zh-HK" style="display: none;">聯絡方式</h3>
+                    <h3 data-lang="en" style="display: none;">Contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> FLAT/RM 122 1/F LIVEN HOUSE 61-63 KING YIP STREET KWUN TONG</p>
+                    <p><i class="fas fa-phone-alt"></i> 852 9635 8519</p>
+                    <p><i class="fas fa-envelope"></i> worldjumbo02@gmail.com</p>
+                </div>
             </div>
-            <div class="footer-links">
-                <a href="index.html" data-lang="home">首页</a>
-                <a href="about.html" data-lang="about">关于我们</a>
-                <a href="products.html" data-lang="products">产品展示</a>
-                <a href="contact.html" data-lang="contact">联系我们</a>
+            <div class="footer-bottom">
+                <p data-lang="zh-CN">&copy; 2025 WORLD JUMBO LIMITED. 版权所有</p>
+                <p data-lang="zh-HK" style="display: none;">&copy; 2025 WORLD JUMBO LIMITED. 版權所有</p>
+                <p data-lang="en" style="display: none;">&copy; 2025 WORLD JUMBO LIMITED. All Rights Reserved</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/language.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // 语言切换功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageSelect = document.getElementById('languageSelect');
+            const currentLang = localStorage.getItem('preferredLang') || 'zh-HK';
+            
+            // 设置初始语言
+            languageSelect.value = currentLang;
+            switchLanguage(currentLang);
+            
+            // 语言切换下拉框事件
+            languageSelect.addEventListener('change', function() {
+                const lang = this.value;
+                switchLanguage(lang);
+                localStorage.setItem('preferredLang', lang);
+            });
+            
+            function switchLanguage(lang) {
+                // 切换所有语言相关元素
+                document.querySelectorAll('[data-lang]').forEach(element => {
+                    if (element.getAttribute('data-lang') === lang) {
+                        element.style.display = '';
+                    } else {
+                        element.style.display = 'none';
+                    }
+                });
+                
+                // 更新HTML lang属性
+                document.documentElement.lang = lang;
+            }
+        });
+    </script>
 </body>
 </html> 
